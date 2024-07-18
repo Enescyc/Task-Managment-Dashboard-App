@@ -8,9 +8,9 @@ import MentorsComponent from "@/components/hero/mentor/mentors-component";
 
 export default function Home() {
   return (
-    <main className="flex flex-col lg:flex-row w-full h-full bg-[#FAFAFA] overflow-hidden">
+    <main className="flex flex-col lg:flex-row w-full h-full max-h-screen bg-[#FAFAFA] lg:overflow-y-hidden">
       <Sidebar></Sidebar>
-      <div className={"flex flex-col w-full px-6 py-6 gap-y-10 h-full overflow-y-scroll"}>
+      <div className={"flex flex-col w-full px-6 py-6 gap-y-10 h-full lg:max-h-screen lg:overflow-y-scroll"}>
         <HeroComponent/>
         <div className={"flex flex-col lg:flex-row items-center gap-x-5"}>
           <RunningTaskComponent runningTaskCount={50} totalTaskCount={100}></RunningTaskComponent>
@@ -19,7 +19,7 @@ export default function Home() {
         <MentorsComponent/>
         <UpcomingTaskComponent/>
       </div>
-      <div className={"flex bg-white border-l  h-screen w-1/2 "}>
+      <div className={"flex flex-col w-1/2 px-6 py-6 gap-y-10 h-full lg:max-h-screen lg:overflow-y-scroll"}>
         Right Sidebar TODO
       </div>
     </main>
