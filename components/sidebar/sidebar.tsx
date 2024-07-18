@@ -47,7 +47,7 @@ function Sidebar() {
           <ProfileComponent/>
         </div>
       </div>
-      <div className={"lg:flex flex-col items-center px-8 py-8 gap-y-14 hidden border-r h-full w-full"}>
+      <div className={"lg:flex flex-col items-center px-8 py-8 gap-y-14 hidden border-r h-full w-full lg:overflow-y-scroll xl:overflow-y-hidden overflow-x-hidden"}>
         <Logo></Logo>
         <div className={"flex flex-col items-start justify-center bg-white gap-y-6 w-full"}>
           {
