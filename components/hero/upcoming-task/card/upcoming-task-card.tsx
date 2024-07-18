@@ -7,9 +7,9 @@ function UpcomingTaskCard() {
   return (
     <div className={"flex flex-col px-6 py-6 gap-y-4 bg-white rounded-lg"}>
       <div className={"flex w-full h-full"}>
-        <Image width={200} height={200} className={"flex w-full h-full"} src={"/images/img.png"} alt={"hero image"}/>
+        <Image width={1000} height={200} className={"flex w-full h-full"} src={"/images/img.png"} alt={"hero image"}/>
       </div>
-      <div className={"flex flex-col"}>
+      <div className={"flex flex-col w-full"}>
         <h3 className={"text-[#141522] font-semibold"}>Creating Mobile App Design</h3>
         <h5 className={"text-[#54577A] text-xs"}>UI/UX Design</h5>
       </div>
