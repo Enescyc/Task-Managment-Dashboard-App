@@ -2,7 +2,7 @@ import React from 'react';
 
 function RunningTaskComponent(props: Props) {
   return (
-    <div className={"flex w-full text-white h-[124px] px-5 py-5 bg-[#141522] rounded-lg"}>
+    <div className={"flex lg:flex-col w-full lg:w-[214px] lg:gap-y-5 text-white h-[124px] lg:h-[214px] px-5 py-5 bg-[#141522] rounded-lg"}>
       <div className={"flex flex-col  w-full h-full items-start justify-between"}>
         <h5 className={"text-lg font-semibold"}>Running Task</h5>
         <p className={"text-3xl font-semibold"}>{props.runningTaskCount}</p>
